@@ -10,6 +10,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req,res) => {
+    res.send("Welcome to My Api");
+})
+
+
 app.get ('/api/greet',  (req, res) => {
     const name = req.query.name;
     if (!name){
