@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req,res) => {
-    res.send("Welcome to My Api");
+    res.send("Welcome to My Api . Try /api/greet or /api/greet?name=yournamwe after the base url");
 })
 
 
